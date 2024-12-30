@@ -1,0 +1,108 @@
+/* Base Styles */
+body {
+    background-color: black;
+    color: #00ff00;
+    font-family: "Courier New", Courier, monospace;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  h1, h2 {
+    text-align: center;
+    text-shadow: 0 0 20px #00ff00;
+  }
+  
+  p {
+    margin: 20px auto;
+    width: 80%;
+    line-height: 1.8;
+    font-size: 1.2em;
+  }
+  
+  a {
+    color: #00ff00;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  a:hover {
+    color: #00dd77;
+  }
+  
+  /* Header Section */
+  header {
+    background: linear-gradient(90deg, #003300, #001a00);
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 0 15px #00ff00;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    animation: glow 1.5s infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #00ff00;
+    }
+    to {
+      text-shadow: 0 0 20px #00ff00;
+    }
+  }
+  
+  /* About Section */
+  .about-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #002200;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Image Gallery */
+  .image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    gap: 20px;
+  }
+  
+  img {
+    max-width: 300px;
+    border: 2px solid #00ff00;
+    box-shadow: 0 0 15px #00ff00;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #00ff00;
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 30px;
+    font-size: 0.8em;
+    color: #00aa00;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  footer a {
+    margin: 0 10px;
+  }
+  
